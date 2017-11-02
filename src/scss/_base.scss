@@ -1,0 +1,25 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: $base-font;
+	background: $color-grey;
+}
+
+.wrapper {
+	margin: 60px auto;
+	max-width: 662px;
+	//padding: 0 20px;
+	background: url('../images/bg-form.jpg') repeat-y;
+
+	@media #{$small-only} {
+		margin: 0 auto;
+	}
+}
